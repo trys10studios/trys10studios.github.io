@@ -1,5 +1,5 @@
 html {
-    font-family: Luminari;
+    font-family: fantasy;
     background-color: lightgreen;
     overflow-x: hidden;
     margin: 0;
@@ -7,7 +7,7 @@ html {
     width: 100%;
 }
 p {
-    font-family: Impact, sans-serif;
+    font-family: Monospace, sans-serif;
     font-size: 12px;
 }
 
