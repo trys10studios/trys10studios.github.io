@@ -35,7 +35,7 @@ img {
     margin: 10px;
 }
 
-h1 {
+h1, h2 {
     font-size: 60px;
     position: center;
     padding-bottom: 20px;
