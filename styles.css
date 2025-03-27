@@ -37,7 +37,7 @@ img {
 
 h1 {
     font-size: 60px;
-    position: relative;
+    position: center;
     padding-bottom: 20px;
     margin: -20px;
     z-index: -1;
