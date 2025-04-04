@@ -6,52 +6,56 @@
     <title>Computer Science Capstone</title>
     <link rel="stylesheet" href="./styles.css">
 </head>
-<main>
-    <nav id="navbar">
-        <div><a href="#projects">Projects</a></div>
-        <div><a href="#videos">Videos</a></div>
-        <div><a href="#links">Links</a></div>
-    </nav>
-    <section id="welcome-section">
-        <h1>Hi, my name is Ray Wellman</h1>
-        <h2 id="web-dev">I am a web, mobile, and game developer.</h2>
-    </section>
-    <img src="./images/Arrow.png" id="arrow"></img>    
+<body>
+    <main>
+        <nav id="navbar">
+            <div><a href="#projects">Projects</a></div>
+            <div><a href="#videos">Videos</a></div>
+            <div><a href="#links">Links</a></div>
+        </nav>
+        <section id="welcome-section">
+            <h1>Hi, my name is Ray Wellman</h1>
+            <h2 id="web-dev">I am a web, mobile, and game developer.</h2>
+        </section>
+        <img src="./images/Arrow.png" id="arrow"></img>    
+    
+        <section id="projects">
+        <!--Code Review Video-->
+    
+        <h1>Welcome to My Capstone Project Showcase!</h1>
+        <header id="videos">Code Review Video</header>
+            <div>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/WA9b9GjIa7U?si=GGpQPoKoY4-swwlX" title="YouTube video player" 
+                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <p>Code review of my capstone project for SNHU.</p>
+            
+            <div>
+                <header id="project">Project 1: Software Engineering and Design</header>
+                <p>This artifact was updated to improve the UI/UX by adding an edit button for modifying existing inventory 
+                    items and a full-view mode for individual items in my Android Inventory Mobile App.</p>
 
-    <section id="projects">
-    <!--Code Review Video-->
+                <header id="project">Project 2: Data Structures and Algorithms</header>
+                <p>This artifact demonstrates a real-time search function I added to the Android Inventory Mobile App.
+                    Though it uses a linear search, I found a time complexity of O(n) acceptable given typical use cases and mobile capacity.</p>
 
-    <h1>Welcome to My Capstone Project Showcase!</h1>
-    <header id="videos">Code Review Video</header>
-        <div>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/WA9b9GjIa7U?si=GGpQPoKoY4-swwlX" title="YouTube video player" 
-                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
-        <p>Code review of my capstone project for SNHU.</p>
+                <header id="project">Project 3: Databases</header>
+                <p>This artifact was updated by adding three columns—category, price, and SKU—to the SQLite database. 
+                    I also implemented a spinner to enable filtered search results within the app.</p>
+
+            </div>
+        </section>
         
-        <div>
-            <header id="project">Project 1: Software Engineering and Design</header>
-            <p>This artifact was updated by making changes to the UI/UX including an edit button for making changes to existing
-                inventory items and a full view mode for individual items of my Android Inventory Mobile App</p>
-            <header id="project">Project 2: Data Structures and Algorithms</header>
-            <p>This artifact was updated by adding a real-time search function for my Android Inventory Mobile App. Though it is a linear search,
-            considering the size of a mobile phone's capacity, and likely use of an inventory app on such a device, I found a time complexity of O(n) to
-            be sufficient.</p>
-            <header id="project">Project 3: Databases</header>
-            <p>This artifact was updated by adding three columns to the SQLite Database; category, price, and SKU, and adding a spinner, allowing
-                filtering to be applied when searching in my Android Inventory Mobile App</p>
+        <footer id="links">
+        <div><a href="https://github.com/trys10studios" id="profile-link" target="_blank"><img
+                    src="./images/GitHub-Mark-32px.png" />
+                GitHub Profile</a></div>
+        <div><a href="https://trys10studios.itch.io/" target="_blank"><img src="./images/icons8-itch-io-32.png" />Game
+                Projects</a>
         </div>
-    </section>
-    
-    <footer id="links">
-    <div><a href="https://github.com/trys10studios" id="profile-link" target="_blank"><img
-                src="./images/GitHub-Mark-32px.png" />
-            GitHub Profile</a></div>
-    <div><a href="https://trys10studios.itch.io/" target="_blank"><img src="./images/icons8-itch-io-32.png" />Game
-            Projects</a>
-    </div>
-    </footer>
-    
-</main>
+        </footer>
+        
+    </main>
+</body>
 </html>
