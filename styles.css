@@ -1,14 +1,43 @@
 html {
-    font-family: Impact;
-    background-color: lightgreen;
+    font-family: Verdana, sans-serif;
+    background-color: black;
+    color: #FF0000;
     overflow-x: hidden;
     margin: 0;
     padding: 0;
     width: 100%;
 }
 p {
+    font-size: x-large;
+    text-align: left;
+    padding: 10px;
+    width: 50%;
+    margin: 20px auto;
+    color: black;
+    background-color: white;
+}
+
+header {
     font-family: monospace, sans-serif;
-    font-size: large;
+    margin-top: 5%;
+}
+
+#annotation {
+    font-size: x-large;
+    text-align: center;
+    padding-left: 30%;
+    padding-right: 30%;
+    padding-bottom: 20px;
+    color: white;
+}
+
+#project {
+    font-weight: bolder;
+    box-sizing: border-box;
+    background-color: white;
+    box-shadow: 10px 10px red;
+    width: fit-content;
+    margin: 10px auto;
 }
 
 nav {
@@ -21,17 +50,16 @@ nav {
 
 nav div {
     display: inline-block;
-    width: 33%;
+    width: 30%;
     text-align: center;
     font-size: xx-large;
     background-color: white;
-    margin: 0 auto;
     padding: 0;
 }
 
 nav a:hover,
 footer a:hover {
-    color: lightgreen;
+    color: red;
     cursor: pointer;
 }
 
@@ -42,31 +70,20 @@ img {
 h1 {
     font-size: 60px;
     position: relative;
-    padding-bottom: 20px;
-    margin: -20px;
+    padding: 10px;
+    margin: 0 auto;
+    font-weight: bolder;
     z-index: -1;
-}
-
-.projects-wrapper {
-    display: grid;
-    width: 100%;
-    grid-template-columns: repeat(3, 1fr);
-    justify-items: center;
     background-color: white;
-    margin: 0 auto;
-}
+    box-shadow: 10px 10px red;
+    width: fit-content;
 
-.project-description {
-    display: block;
-    margin: 0 auto;
-    padding: 0;
-    font-size: xx-large;
-    top: -32.5px;
 }
 
 #web-dev {
     font-size: 20px;
     font-family: Verdana, sans-serif;
+    color: white;
 }
 
 #welcome-section {
@@ -78,12 +95,10 @@ h1 {
 }
 
 #projects,
-footer,
-#videos {
+footer{
     display: block;
     width: 100%;
-    margin: 0 auto;
-    padding: 20px 0;
+    padding: 10px auto;
     text-align: center;
     font-size: 60px;
 }
@@ -109,11 +124,11 @@ a {
     z-index: 1;
 }
 
-video {
+#video {
     width: 100%;
     display: block;
-    margin: 40px auto;
-    border: 10px solid;
+    margin: 20px auto;
+    color: white;
     border-collapse: separate;
 }
 
