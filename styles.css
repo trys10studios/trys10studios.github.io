@@ -31,7 +31,7 @@ header {
     color: white;
 }
 
-#project {
+#project, #intro {
     font-weight: bolder;
     box-sizing: border-box;
     background-color: white;
@@ -94,7 +94,7 @@ h1 {
     text-align: center;
 }
 
-#projects,
+#projects, #professional_self_assessment,
 footer{
     display: block;
     width: 100%;
