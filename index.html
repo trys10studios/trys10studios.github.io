@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Computer Science Capstone</title>
     <link rel="stylesheet" href="./styles.css">
+
 </head>
 <body>
         <nav id="navbar">
@@ -13,8 +14,10 @@
             <div><a href="#links">Links</a></div>
         </nav>
         <section id="welcome-section">
-            <h1>Hi, my name is Richard Wellman</h1>
+            <h1 id="name">Hi, my name is Richard Wellman</h1>
             <h2 id="web-dev">I am a web, mobile, and game developer.</h2>
+            <script src="./spark.js"></script>
+            <div id="spark-container"></div>
         </section>
         <img src="./images/Arrow.png" id="arrow">  
 
@@ -22,20 +25,20 @@
         <br>
     
         <section id="professional_self_assessment">
-            <header id="intro">Introduction & Background</header>
+            <header class="intro">Introduction & Background</header>
             <p>Hi, my name is Richard Wellman. I am a software engineer with extensive experience in game, mobile, and web development. 
                 In 2023, I made the decision to pursue a bachelor’s degree in computer science to enhance my competitiveness 
                 in the job market and to address knowledge gaps I had encountered as a self-taught developer. This academic journey has significantly
                  expanded my foundation in computer science and validated the skills I’ve gained through real-world practice.
             </p>
-            <header id="intro">Core Technical Competencies</header>
+            <header class="intro">Core Technical Competencies</header>
             <p>              
                 Throughout the program, I gained valuable expertise in data structures and algorithms, database management, 
                 front-end frameworks and libraries, UI/UX principles, graphic pipelines, and software engineering practices. I also became deeply 
                 familiar with Agile and SCRUM methodologies, which strengthened my ability to work effectively in team-based environments and
                  deliver iterative improvements to software products. 
             </p>
-            <header id="intro">Cybersecurity Awareness & IT Foundations</header>
+            <header class="intro">Cybersecurity Awareness & IT Foundations</header>
             <p>
                 In addition to my coursework, I independently studied for CompTIA A+, Network+, Security+, and CySA+, as well as the Cisco CCNA. 
                 While I did not pursue the certifications themselves, the study process provided me with a strong understanding of IT fundamentals,
@@ -43,13 +46,13 @@
                  secure coding techniques such as input sanitization to prevent SQL injection, proper use of encryption for data at rest, 
                  and adhering to principles of encapsulation by limiting method and class visibility. 
             </p>
-            <header id="intro">Team Collaboration & Communication</header>
+            <header class="intro">Team Collaboration & Communication</header>
             <p>               
                 In collaborative environments, I’ve applied Agile principles to consistently test and isolate components during development, 
                 improving both software quality and team productivity. I understand the importance of communicating clearly with stakeholders, 
                 particularly when translating technical issues into business impacts or user-focused outcomes. 
             </p> 
-            <header id="intro">Hands-On Project Experience</header>
+            <header class="intro">Hands-On Project Experience</header>
             <p>
                 Much of my technical growth has also come from building and releasing my own projects, including a wide variety of games, utilities,
                  tools, mobile apps, and static and full stack web sites. Through these projects, I’ve had to communicate with collaborators, 
@@ -58,7 +61,7 @@
                   While my professional focus has been in game development, the principles I’ve applied—such as performance optimization,
                    secure architecture, and engaging UX—are transferable across mobile and web platforms as well. 
             </p> 
-            <header id="intro">Portfolio Overview & Closing</header> 
+            <header class="intro">Portfolio Overview & Closing</header> 
             <p>            
                 The projects showcased in this portfolio reflect the range and depth of my computer science skills, including secure software design,
                  database integration, algorithmic problem solving, and user-focused application development. Each artifact demonstrates
@@ -67,19 +70,17 @@
                   computer science field.                 
             </p>
         </section>
+
         <section id="projects">
-        <!--Code Review Video-->   
-        
+        <!--Code Review Video-->           
         <header id="video">Code Review Video</header>
-            <div>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/WA9b9GjIa7U?si=GGpQPoKoY4-swwlX" title="YouTube video player" 
+            <div id="you_tube_video">
+                <iframe width="960" height="540" src="https://www.youtube.com/embed/WA9b9GjIa7U?si=GGpQPoKoY4-swwlX" title="YouTube video player" 
                     frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                     referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
-            <div id="annotation">Code review of my capstone project for SNHU.</div>
-            
             <div>
-                <header id="project">Project 1: Software Engineering and Design</header>
+                <header class="project">Project 1: Software Engineering and Design</header>
 
                 <p>This artifact was updated to improve the UI/UX by adding an edit button for modifying existing inventory 
                     items and a full-view mode for individual items in my Android Inventory Mobile App.</p>
@@ -88,26 +89,23 @@
                 <img src="./images/AndroidInventoryAppLogin2.png" />
                 <img src="./images/AndroidInventoryAppMainEditItem.png" />                
 
-                <header id="project">Project 2: Data Structures and Algorithms</header>
+                <header class="project">Project 2: Data Structures and Algorithms</header>
                 <p>This artifact demonstrates a real-time search function I added to the Android Inventory Mobile App.
                     Though it uses a linear search, I found a time complexity of O(n) acceptable given typical use cases and mobile capacity.</p>
                 <img src="./images/AndroidInventoryAppMainView.png" />
                 <img src="./images/AndroidInventoryAppFullView.png" />
 
-                <header id="project">Project 3: Databases</header>
+                <header class="project">Project 3: Databases</header>
                 <p>This artifact was updated by adding three columns—category, price, and SKU—to the SQLite database. 
                     I also implemented a spinner to enable filtered search results within the app.</p>
                 <img src="./images/AndroidInventoryAppMainViewSearchSpinner.png" />
                 <img src="./images/AndroidInventoryAppMainViewSearchSpinnerPrice.png" />
 
-                <header id="project">Github Repo for Inventory Mobile App</header>
-                <p>Click on the image below to visit the Inventory Mobile App GitHub Repo</p>
+                <header class="project">Github Repo for Inventory Mobile App</header>
+                <p id="repo">Click on the image below to visit the Inventory Mobile App GitHub Repo</p>
                 <div>
-                    <a href="https://github.com/trys10studios/inventoryapp" ><img src="./images/ic_launcher.png" /></a>
+                    <a href="https://github.com/trys10studios/inventoryapp" ><img id="repo_icon" src="./images/ic_launcher.png" /></a>
                 </div>
-            </div>
-        </section>
-
             </div>
         </section>
         
