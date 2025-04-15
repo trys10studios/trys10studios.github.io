@@ -8,7 +8,7 @@ html {
     width: 100%;
 }
 p {
-    font-size: x-large;
+    font-size: large;
     text-align: left;
     padding: 10px;
     width: 50%;
@@ -22,22 +22,20 @@ header {
     margin-top: 5%;
 }
 
-#annotation {
-    font-size: x-large;
-    text-align: center;
-    padding-left: 30%;
-    padding-right: 30%;
-    padding-bottom: 20px;
-    color: white;
-}
-
-#project, #intro {
+.project, .intro, #video{
     font-weight: bolder;
     box-sizing: border-box;
     background-color: white;
     box-shadow: 10px 10px red;
     width: fit-content;
-    margin: 10px auto;
+    margin: 80px auto 0 auto;
+    padding: 10px;
+}
+.project { 
+    margin-top: 100px;
+}
+#you_tube_video {
+    margin-bottom: 100px;
 }
 
 nav {
@@ -45,14 +43,17 @@ nav {
     background-color: white;
     position: fixed;
     z-index: 1;
-    right: 60px;
+    right: 0; 
+    left: 0; 
+    margin: auto;
+    text-align: center;
 }
 
 nav div {
     display: inline-block;
     width: 30%;
     text-align: center;
-    font-size: xx-large;
+    font-size: x-large;
     background-color: white;
     padding: 0;
 }
@@ -67,13 +68,16 @@ img {
     margin: 10px;
 }
 
+#repo_icon {
+    width: 15%;
+}
+
 h1 {
-    font-size: 60px;
+    font-size: 50px;
     position: relative;
     padding: 10px;
     margin: 0 auto;
     font-weight: bolder;
-    z-index: -1;
     background-color: white;
     box-shadow: 10px 10px red;
     width: fit-content;
@@ -85,6 +89,14 @@ h1 {
     font-family: Verdana, sans-serif;
     color: white;
 }
+#name {
+    transition: transform 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+}
+#name:hover {
+    transform: scale(1.1);
+    color: #000000;
+  }
 
 #welcome-section {
     height: 50vw;
@@ -98,14 +110,20 @@ h1 {
 footer{
     display: block;
     width: 100%;
-    padding: 10px auto;
+    padding: 10px 10px;
     text-align: center;
-    font-size: 60px;
+    font-size: 40px;
 }
 
+#repo {
+    text-align: center;
+    width: fit-content;
+}
+#video {
+    margin-bottom: 20px;
+}
 footer {
     background-color: white;
-    width: 100%;
 }
 
 .caption {
@@ -124,14 +142,6 @@ a {
     z-index: 1;
 }
 
-#video {
-    width: 100%;
-    display: block;
-    margin: 20px auto;
-    color: white;
-    border-collapse: separate;
-}
-
 #profile-link {
     width: 100%;
 }
@@ -143,6 +153,38 @@ a {
     padding: 0 0 250px 0px;
     -webkit-animation: MoveUpDown 1s linear infinite;
     z-index: -1;
+}
+
+#spark-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Prevent sparks from interfering with other elements */
+    z-index: 10; /* Make sure it's on top */
+}
+
+.spark {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background: red;
+    animation: explode 3.0s forwards ease-out;
+    pointer-events: none; /* Prevent sparks from interfering with other elements */
+}
+
+@keyframes explode {
+    0% {
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+    100% {
+        transform: translate(var(--dx), var(--dy));
+        background: white;
+        opacity: .05;
+    }
 }
 
 @keyframes MoveUpDown {
