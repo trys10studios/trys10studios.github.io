@@ -123,7 +123,7 @@ img {
 }
 
 #projects, #professional_self_assessment,
-footer{
+footer, #videos {
     display: block;
     width: 100%;
     padding: 10px 10px;
