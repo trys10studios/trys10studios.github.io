@@ -7,6 +7,36 @@ html {
     padding: 0;
     width: 100%;
 }
+
+header {
+    font-family: monospace, sans-serif;
+    margin-top: 5%;
+}
+
+h1 {
+    font-size: 50px;
+    position: relative;
+    padding: 10px;
+    margin: 0 auto;
+    font-weight: bolder;
+    background-color: white;
+    box-shadow: 10px 10px red;
+    width: fit-content;
+}
+
+h2 {
+    font-weight: bolder;
+    font-size: xxx-large;
+    text-align: center;
+    box-sizing: border-box;
+    background-color: white;
+    box-shadow: 10px 10px red;
+    width: fit-content;
+    margin: 80px auto 0 auto;
+    padding: 10px;
+    animation: colorCycle 2.0s infinite; /* Color cycle for Showcase Text*/
+}
+
 p {
     font-size: large;
     text-align: left;
@@ -15,11 +45,6 @@ p {
     margin: 20px auto;
     color: black;
     background-color: white;
-}
-
-header {
-    font-family: monospace, sans-serif;
-    margin-top: 5%;
 }
 
 .project, .intro, #video{
@@ -72,28 +97,19 @@ img {
     width: 15%;
 }
 
-h1 {
-    font-size: 50px;
-    position: relative;
-    padding: 10px;
-    margin: 0 auto;
-    font-weight: bolder;
-    background-color: white;
-    box-shadow: 10px 10px red;
-    width: fit-content;
-
-}
-
 #web-dev {
     font-size: 20px;
     font-family: Verdana, sans-serif;
     color: white;
 }
-#name {
+#welcome, #name {
     transition: transform 0.3s ease, color 0.3s ease;
-    cursor: pointer;
+    cursor: none;
 }
-#name:hover {
+.project, .intro, #video {
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+#welcome:hover, .project:hover, .intro:hover, #video:hover, #name:hover{
     transform: scale(1.1);
     color: #000000;
   }
@@ -151,28 +167,46 @@ a {
     width: 25%;
     margin: 0 auto;
     padding: 0 0 250px 0px;
-    -webkit-animation: MoveUpDown 1s linear infinite;
+    -webkit-animation: MoveUpDown 1.0s alternate infinite;
     z-index: -1;
 }
 
 #spark-container {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
     pointer-events: none; /* Prevent sparks from interfering with other elements */
-    z-index: 10; /* Make sure it's on top */
+    z-index: -1; /* Make sure it's on bottom */
+}
+
+.spark-wrapper {
+    position: absolute;
+    pointer-events: none;
 }
 
 .spark {
-    position: absolute;
-    width: 10px;
-    height: 10px;
+    width: 5px;
+    height: 5px;
     border-radius: 100%;
-    background: red;
+    background: white;
     animation: explode 3.0s forwards ease-out;
     pointer-events: none; /* Prevent sparks from interfering with other elements */
+}
+
+@keyframes colorCycle {
+    0% {
+    color: white;
+  }
+  25% {
+    color: black;
+  }
+  50% {
+    color: red;
+  }
+  75% {
+    color: black
+  }
+  100% {
+    color: white;
+  }
 }
 
 @keyframes explode {
@@ -182,8 +216,8 @@ a {
     }
     100% {
         transform: translate(var(--dx), var(--dy));
-        background: white;
-        opacity: .05;
+        background: orange;
+        opacity: 0;
     }
 }
 
