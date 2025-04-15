@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
         
         // Play sound on hover
         sound.play();
-        sound.volume = 0.5;
+        sound.volume = 0.5; // Sets volume to 50%
 
         const rect = nameID.getBoundingClientRect();
         const originX = rect.left + rect.width / 2;
