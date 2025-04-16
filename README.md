@@ -24,9 +24,6 @@ Much of my technical growth has also come from building and releasing my own pro
 <h3>Portfolio Overview & Closing</h3>
 The projects showcased in this portfolio reflect the range and depth of my computer science skills, including secure software design, database integration, algorithmic problem solving, and user-focused application development. Each artifact demonstrates not only my technical competencies but also my ability to apply them to solve practical problems and collaborate effectively in dynamic environments. Together, they form a cohesive representation of my readiness to contribute as a professional in the computer science field.
 
-<h3>Code Review Video
-Watch the video here: YouTube Code Review Video</h3>
-
 <h3>Projects
 Project 1: Software Engineering and Design</h3>
 This artifact was updated to improve the UI/UX by adding an edit button for modifying existing inventory items and a full-view mode for individual items in my Android Inventory Mobile App.
@@ -36,12 +33,3 @@ This artifact demonstrates a real-time search function I added to the Android In
 
 <h3>Project 3: Databases</h3>
 This artifact was updated by adding three columns—category, price, and SKU—to the SQLite database. I also implemented a spinner to enable filtered search results within the app.
-
-<h3>GitHub Repo for Inventory Mobile App</h3>
-Click here to visit the Inventory Mobile App GitHub Repo:
-https://github.com/trys10studios/inventoryapp
-
-Additional Links
-GitHub Profile
-
-Game Projects on Itch.io
