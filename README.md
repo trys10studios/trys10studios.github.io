@@ -37,9 +37,7 @@ This artifact was updated by adding three columns—category, price, and SKU—t
 <h4>Additioal Projects</h4>
 
 <b>Game Development</b>
-
 https://trys10studios.itch.io/
 
 <b>Android Google Play Store Apps</b>
-
 https://play.google.com/store/apps/dev?id=7542720530077042016
