@@ -35,7 +35,7 @@ This artifact demonstrates a real-time search function I added to the Android In
 This artifact was updated by adding three columns—category, price, and SKU—to the SQLite database. I also implemented a spinner to enable filtered search results within the app.
 
 <h4>Additioal Projects</h4>
-****Game Development****
+<b>Game Development</b>
 https://trys10studios.itch.io/
-**Android Google Play Store Apps**
+<b>Android Google Play Store Apps</b>
 https://play.google.com/store/apps/dev?id=7542720530077042016
