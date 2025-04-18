@@ -171,21 +171,6 @@ a {
     width: 100%;
 }
 
-#music-toggle {
-    width: fit-content;
-    font-size: x-large;
-    font-weight: bold;
-    margin: 20px;
-    color:black;
-    background-color: white;
-    border-color: red;
-    border-width: 10px;
-}
-
-#music-toggle:hover{
-    color: red;
-}
-
 #arrow {
     display: block;
     width: 25%;
