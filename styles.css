@@ -163,6 +163,11 @@ footer {
     display: inline;
 }
 
+#links{
+    width: 100%;
+    margin: auto auto;
+}
+
 a {
     width: 50%;
     margin: 0 auto;
