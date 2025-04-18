@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
     const welcome = document.getElementById('welcome');
     const sparkContainer = document.getElementById('spark-container');
-    const elements = document.querySelectorAll('img'); // Selects all <img> elements
+    const elements = document.getElementByClass('card'); // Selects all <img> elements
     const name = document.getElementById('name'); // My name at top of page
     const links = document.querySelectorAll('a, button'); // Links to external sites
     const h3elements = document.querySelectorAll('h2'); // Selects all <h3> elements
