@@ -112,11 +112,11 @@ img {
     transition: transform 0.3s ease, color 0.3s ease;
 }
 
-.project, .intro, #video, img {
+.project, .intro, #video, .card {
     transition: transform 0.3s ease, color 0.3s ease;
 }
 
-#welcome:hover, .project:hover, .intro:hover, #video:hover, #name:hover, img:hover{
+#welcome:hover, .project:hover, .intro:hover, #video:hover, #name:hover, .card:hover{
     font-weight: bolder;
     transform: scale(1.1);
     color: #000000;
@@ -167,7 +167,7 @@ a {
     font-weight: bold;
 }
 
-#link {
+.link {
     width: 100%;
 }
 
