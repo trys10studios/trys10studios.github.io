@@ -158,6 +158,11 @@ footer {
     font-family: sans-serif;
 }
 
+#navbar {
+    width: 60%;
+    display: inline;
+}
+
 a {
     width: 50%;
     margin: 0 auto;
