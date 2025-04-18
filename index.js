@@ -17,25 +17,6 @@ document.addEventListener("DOMContentLoaded", function () {
     let h3Sound1IsPlaying = false;
     let h3Sound2IsPlaying = false;
 
-    const musicToggleButton = document.getElementById('music-toggle');
-    const bgMusic = document.getElementById('bg-music');
-
-    // Initially play the music when the page loads
-    bgMusic.currentTime = 0;
-    bgMusic.volume = 0.25;
-    bgMusic.play();
-
-    // Toggle function for turning music on and off
-    musicToggleButton.addEventListener('click', () => {
-        if (bgMusic.paused) {
-            bgMusic.play();  // If music is paused, play it
-            musicToggleButton.textContent = 'Turn Music Off'; // Update button text
-        } else {
-            bgMusic.pause(); // If music is playing, pause it
-            musicToggleButton.textContent = 'Turn Music On'; // Update button text
-        }
-    });
-
     h3elements.forEach(element => {
         element.addEventListener('mouseenter', () => {
             if(h3Sound1IsPlaying) {return;}
